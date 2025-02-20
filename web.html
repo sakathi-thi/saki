@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAKTHISWARI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Base Styles */
         * {
@@ -210,6 +209,13 @@
             margin-bottom: 1rem;
         }
 
+        /* Custom SVG Icons */
+        .custom-icon {
+            width: 32px;
+            height: 32px;
+            fill: var(--primary-color);
+        }
+
         /* Projects Section */
         .projects {
             padding: 5rem 0;
@@ -331,7 +337,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content animate-fade">
                 <div class="about-img">
-                    <img src="D:\web\sakthi.jpg" alt="Profile"width="200" height="400">
+                    <img src="D:\web\sakthi.jpg" alt="Profile" width="200" height="400">
                 </div>
                 <div>
                     <p>Hello, I am Sakthiswari, a recent BCA graduated student who is enthusiastic about learning new 
@@ -348,19 +354,25 @@
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card animate-fade">
-                    <i class="fab fa-react skill-icon"></i>
+                    <svg class="custom-icon" viewBox="0 0 24 24">
+                        <path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/>
+                    </svg>
                     <h3>Frontend Development</h3>
-                    <p>HTML,CSS,JS</p>
+                    <p>HTML, CSS, JS</p>
                 </div>
                 <div class="skill-card animate-fade">
-                    <i class="fas fa-server skill-icon"></i>
+                    <svg class="custom-icon" viewBox="0 0 24 24">
+                        <path d="M4 15v4h4l2.7-2.7-2.7-2.7H4M19 11h-4l-2.7 2.7 2.7 2.7h4v-4l-2.7 2.7L19 11M8 7H4v4l2.7-2.7L8 9.7V7m12 0h-4v2.7l2.7 2.7L20 9.7V7z"/>
+                    </svg>
                     <h3>Backend Development</h3>
                     <p>Python, SQL</p>
                 </div>
                 <div class="skill-card animate-fade">
-                    <i class="fas fa-palette skill-icon"></i>
+                    <svg class="custom-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m-1-9l5-1.5L11 9l1.5 5-5-1.5L13 15l-1.5-5z"/>
+                    </svg>
                     <h3>UI/UX Design</h3>
-                    <p>Figma,</p>
+                    <p>Figma</p>
                 </div>
             </div>
         </div>
@@ -372,20 +384,28 @@
             <div class="projects-grid">
                 <div class="project-card animate-fade">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/400x200" alt="Project">
+                        <svg viewBox="0 0 400 200" style="background:#555">
+                            <text x="50%" y="50%" fill="#fff" dominant-baseline="middle" text-anchor="middle">
+                                Project Image
+                            </text>
+                        </svg>
                     </div>
                     <div class="project-info">
-                        <h3>online banking system</h3>
-                        <p>It is a php based project where we can view the deatils </p>
+                        <h3>Online Banking System</h3>
+                        <p>PHP-based project for viewing account details</p>
                     </div>
                 </div>
                 <div class="project-card animate-fade">
                     <div class="project-img">
-                        <img src="https://via.placeholder.com/400x200" alt="Project">
+                        <svg viewBox="0 0 400 200" style="background:#555">
+                            <text x="50%" y="50%" fill="#fff" dominant-baseline="middle" text-anchor="middle">
+                                Project Image
+                            </text>
+                        </svg>
                     </div>
                     <div class="project-info">
-                        <h3>Wellhive app</h3>
-                        <p> A self care app based on python</p>
+                        <h3>Wellhive App</h3>
+                        <p>Self-care application built with Python</p>
                     </div>
                 </div>
             </div>
